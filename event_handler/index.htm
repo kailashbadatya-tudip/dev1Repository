@@ -1,0 +1,34 @@
+<!doctype html>
+<head>
+<script type="text/javascript" src="./js/jquery.js"></script>
+<style type="text/css">
+#mydiv{
+	width: 200px;
+	height: 100px;
+	background-color: green;
+	border:2px solid red;
+	text-align: center;
+}
+</style>
+<title>Event handler program</title>
+</head>
+<body>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#mydiv").click(function(){
+
+		alert("you have just clicked this div");
+	});
+
+
+	$("#mydiv").mouseout(function(){
+		$("#mydiv").css("background-color","green");
+		$("#mydiv").text("your mouse is out of this div");
+	});
+});
+</script>
+<div id="mydiv">
+this is div
+</div>
+</body>
+</html>
